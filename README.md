@@ -18,7 +18,7 @@ The SOAP log and API log tables had grown extremely large, with approximately **
 - **Scheduler & Automation:** Oversaw creation of **jobs and scheduling** to automate archival, ensuring minimal impact on system performance.  
 
 ## Solution & Workflow
-1. **Batch Selection:** Logs are selected in batches of **40,000 records** from source tables (SOAP log and API log).  
+1. **Batch Selection:** Logs are selected in batches of **400,000 records** from source tables (SOAP log and API log).  
 2. **Archival:** Each batch is inserted into the **Audit Log Database**.  
 3. **Verification:** System verifies that all selected records are present in the audit database.  
 4. **Deletion:** Only after successful verification are records deleted from the source database.  
